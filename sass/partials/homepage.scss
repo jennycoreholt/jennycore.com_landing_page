@@ -1,0 +1,184 @@
+// homepage.scss //
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+//****** NOTES ******//
+// fix rotate on mobile //
+
+/************ body style **********/
+html, body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: none;
+  font-family: "Roboto", helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+// .favicon_icon {
+//   background-image: url("/img/variable6.png");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   height: 10px;
+//   width: 10px;
+// }
+
+
+//********** background styling *********//
+.background_size {
+  height: 50vh;
+  min-height: 300px;
+  position: absolute;
+  width: 100%;
+  @media(min-width: $screen-sm-min) {
+    height: 100%;
+    top: 0;
+    width: 50%;
+  }
+}
+
+.vertical_middle {
+  display: table;
+  height: 50vh;
+  min-height: 300px;
+  vertical-align: middle;
+  width: 100%;
+  @media(min-width: $screen-sm-min) {
+    height: 100vh;
+  }
+}
+
+//*** art ***//
+.art_website_background {
+  background-color: #fff;
+  left: 0;
+}
+
+.art_website_background-image {
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+  background-image: url('/img/art_homepage_3.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform .5s ease-in-out;
+  z-index: -1;
+  @media(min-width: $screen-sm-min) {
+    background-size: cover;
+  }
+}
+
+//*** design ***//
+.design_website_background {
+  background-color: #ebfff9;
+}
+
+.design_website_background-image {
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+  background-image: url('/img/web_background_v1.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform .5s ease-in-out;
+  z-index: -1;
+  @media(min-width: $screen-sm-min) {
+    background-size: cover;
+  }
+}
+
+.design_website_background {
+  right: 0;
+}
+
+//******* scaling ********//
+@media(min-width:$screen-sm-min) {
+  .scale {
+    transform: scale(1.1);
+  }
+}
+
+//******** elements *********//
+.text_box {
+  display: table-cell;
+  vertical-align: middle;
+  @media(min-width: $screen-sm-min) {
+    .wrapping-border {
+      border: 2px solid transparent;
+      border-radius: 2px;
+      margin: 0 2em;
+      padding: 20px 10px;
+    }
+  }
+  @media(min-width: $screen-md-min) {
+    .wrapping-border {
+      margin: 0 9em;
+    }
+  }
+  @media(min-width: $screen-sm-min) {
+    .wrapping-border.scale2.green {
+      background-color: #ebfff9;
+    }
+  }
+
+  h2 {
+  margin: 0;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  img {
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    align-items: right;
+    display: flex;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-bottom: .5em;
+    transition: transform 1s ease-in-out;
+    width: 12%;
+    @media(min-width: $screen-sm-min) {
+      margin-top: -8em;
+      padding-bottom: 1.5em;
+    }
+  }
+  h4 {
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+  }
+}
+
+//******* colours *******//
+.black {
+  border-color: #666666!important;
+  color: #666666!important;
+}
+.purple {
+  border-color: #b8a3fd!important;
+  color: #b8a3fd!important;
+}
+
+.green {
+  border-color: #53caaa!important;
+  color: #53caaa!important;
+}
+
+.grey {
+  border-color: #939393!important;
+  color: #939393!important;
+}
