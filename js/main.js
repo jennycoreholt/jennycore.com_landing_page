@@ -5,6 +5,26 @@
 
 $(document).ready(function() {
 
+  // window.scrollTo(0,1);
+
+  // Removes address bar in mobile browsers //
+  // setTimeout(function() { window.scrollTo(0, 1) }, 100);
+  //
+  // function toggleFullScreen() {
+  //   var doc = window.document;
+  //   var docEl = doc.documentElement;
+  //
+  //   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  //   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+  //
+  //   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+  //     requestFullScreen.call(docEl);
+  //   }
+  //   else {
+  //     cancelFullScreen.call(doc);
+  //   }
+  // }
+
   //about box show hide transition //
   $(function(){
     var c=-600;

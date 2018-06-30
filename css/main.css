@@ -11652,14 +11652,10 @@ html, body {
   left: 0; }
 
 .art_website_background-image {
-  -webkit-transition: transform .5s ease-in-out;
-  -moz-transition: transform .5s ease-in-out;
-  -o-transition: transform .5s ease-in-out;
   background-image: url("/img/art_homepage_3.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  transition: transform .5s ease-in-out;
   z-index: -1; }
   @media (min-width: 768px) {
     .art_website_background-image {
@@ -11669,14 +11665,10 @@ html, body {
   background-color: #ebfff9; }
 
 .design_website_background-image {
-  -webkit-transition: transform .5s ease-in-out;
-  -moz-transition: transform .5s ease-in-out;
-  -o-transition: transform .5s ease-in-out;
   background-image: url("/img/web_background_v1.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  transition: transform .5s ease-in-out;
   z-index: -1; }
   @media (min-width: 768px) {
     .design_website_background-image {
@@ -11685,9 +11677,6 @@ html, body {
 .design_website_background {
   right: 0; }
 
-@media (min-width: 768px) {
-  .scale {
-    transform: scale(1.1); } }
 .text_box {
   display: table-cell;
   vertical-align: middle; }
@@ -11708,9 +11697,9 @@ html, body {
   .text_box span {
     font-size: 18px; }
   .text_box img {
-    -webkit-transition: transform 1s ease-in-out;
-    -moz-transition: transform 1s ease-in-out;
-    -o-transition: transform 1s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
     align-items: right;
     display: flex;
     height: auto;
@@ -11718,17 +11707,27 @@ html, body {
     margin-right: auto;
     justify-content: center;
     padding-bottom: .5em;
-    transition: transform 1s ease-in-out;
+    transition: transform .5s ease-in-out;
     width: 12%; }
     @media (min-width: 768px) {
       .text_box img {
         margin-top: -8em;
         padding-bottom: 1.5em; } }
-  .text_box h4 {
-    -webkit-transition: transform 1s ease-in-out;
-    -moz-transition: transform 1s ease-in-out;
-    -o-transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out; }
+
+a:hover > img {
+  transform: scale(1.2); }
+
+a:hover > div > h4.green.text-center {
+  color: #319f82 !important; }
+
+a:hover > div > h4.purple.text-center {
+  color: #7e58fb !important; }
+
+a > div > h4 {
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transform: color .5s ease-in-out; }
 
 .black {
   border-color: #666666 !important;
