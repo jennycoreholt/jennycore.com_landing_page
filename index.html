@@ -23,11 +23,11 @@
       <div class="row">
 
         <!-- art website link -->
-        <div class="background_size art_website_background art_website_background-image"></div>
+        <div class="background_size art_website_background art_website_background_image" src='/img/art_homepage_3_lowres.png' data-src="/img/art_homepage_3.png"></div>
         <div class="col-sm-6">
           <div class="vertical_middle text-center">
-            <div class="text_box art">
-              <a href="http://art.jennycore.com">
+            <div class="text_box art animation-left">
+              <a class="go_to_external_page" href="http://art.jennycore.com">
                 <img class="img-responsive" src="/img/pencil_icon.svg"/>
                 <div class="wrapping-border black">
                   <h2 class="black">Jenny Core</h2>
@@ -41,11 +41,11 @@
         <!-- **END** Art website link -->
 
         <!-- Webdesign website link -->
-        <div class="background_size design_website_background design_website_background-image"></div>
+        <div class="background_size design_website_background design_website_background_image"></div>
         <div class="col-sm-6">
           <div class="vertical_middle text-center">
-            <div class="text_box design">
-              <a href="http://web.jennycore.com" class="darken-text scale">
+            <div class="text_box design animation-right">
+              <a class="go_to_external_page" href="http://web.jennycore.com">
                 <img class="img-responsive" src="/img/laptop_icon.svg"/>
                 <div class="wrapping-border green">
                   <h2 class="black">Jenny Core-Holt</h2>
@@ -65,6 +65,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/min/main-min.js"></script>
+    <script src="js/min/main-min.js">
+
+      //lazyload//
+      $("div.lazy").lazyload({
+        effect : "fadeIn"
+      });
+
+    </script>
   </body>
 </html>

@@ -11627,6 +11627,14 @@ html, body {
     text-decoration: none; }
 
 .background_size {
+  -webkit-animation: 1.3s ease-in-out fadeIn;
+  /* Safari 4+ */
+  -moz-animation: 1.3s ease-in-out fadeIn;
+  /* Fx 5+ */
+  -o-animation: 1.3s ease-in-out fadeIn;
+  /* Opera 12+ */
+  animation: 1.3s ease-in-out fadeIn;
+  /* IE 10+, Fx 29+ */
   height: 50vh;
   min-height: 300px;
   position: absolute;
@@ -11651,27 +11659,27 @@ html, body {
   background-color: #fff;
   left: 0; }
 
-.art_website_background-image {
+.art_website_background_image {
   background-image: url("/img/art_homepage_3.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1; }
   @media (min-width: 768px) {
-    .art_website_background-image {
+    .art_website_background_image {
       background-size: cover; } }
 
 .design_website_background {
   background-color: #ebfff9; }
 
-.design_website_background-image {
+.design_website_background_image {
   background-image: url("/img/web_background_v1.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1; }
   @media (min-width: 768px) {
-    .design_website_background-image {
+    .design_website_background_image {
       background-size: cover; } }
 
 .design_website_background {
@@ -11744,3 +11752,39 @@ a > div > h4 {
 .grey {
   border-color: #939393 !important;
   color: #939393 !important; }
+
+.animation-left {
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+  /* Safari 4+ */
+  -moz-animation: 1s ease-out 0s 1 slideInFromLeft;
+  /* Fx 5+ */
+  -o-animation: 1s ease-out 0s 1 slideInFromLeft;
+  /* Opera 12+ */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  /* IE 10+, Fx 29+ */ }
+
+.animation-right {
+  -webkit-animation: 1s ease-out 0s 1 slideInFromRight;
+  /* Safari 4+ */
+  -moz-animation: 1s ease-out 0s 1 slideInFromRight;
+  /* Fx 5+ */
+  -o-animation: 1s ease-out 0s 1 slideInFromRight;
+  /* Opera 12+ */
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  /* IE 10+, Fx 29+ */ }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
